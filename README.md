@@ -1,6 +1,8 @@
 This is a collection of various school project from my CS degree. 
 
-CMSC430_Project2 - A compiler for a made up programming language written in C++. The compiler takes test files as input and performs syntax checks on the language, providing reports of any errors.
+CMSC430_Project2 - A compiler for a made up programming language written in C++. This project focused on syntax validation.
+
+CMSC430_Project4 - A compiler for a made up programming language, written in C++. This project focuses on checking semantic rules. 
 
 CMSC451_Project1 - Java program that benchmarks two sorting algorithms, quick sort and bubble sort. Run BenchmarkSorts.java to benchmark the algorithms, saving the results to a .txt file. Run BenchmarkReport.java and select either .txt file to generate a GUI that displays the results of the benchmark.
 
