@@ -1,0 +1,19 @@
+<!-- Registration page, allows user to register username and password -->
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="container">
+        <h1>Registration Page</h1>
+        <br>
+        <form action="http://localhost:5000/Register" method="post">
+            <input type="text" placeholder="Username" name="username" value="{{
+            request.form.username }}">
+            <input type="password" placeholder="Password" name="password" value="{{
+            request.form.password }}">
+            <input class="btn btn-default" type="submit" value="Register">
+        </form>
+        {% if error %}
+            <p class="error"><strong>Error:</strong> {{ error }}
+        {% endif %}
+    </div>
+{% endblock %}

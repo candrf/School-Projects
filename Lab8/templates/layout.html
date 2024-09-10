@@ -1,0 +1,42 @@
+<!-- Main layout template. All other html files use this as their base. -->
+
+<!doctype html>
+<html>
+    <header>
+        AIRBORNE!
+    </header>
+    <nav>
+        <a href="http://127.0.0.1:5000">Home</a>
+        <a href="http://127.0.0.1:5000/Login">Login</a>
+        <a href="http://127.0.0.1:5000/Register">Register</a>
+        <a href= "http://localhost:5000/UpdatePW">Update PW</a>
+        <a href="http://127.0.0.1:5000/Timeline">Timeline</a>
+        <a href="http://127.0.0.1:5000/Battles">Notable Battles</a>
+        <a href="http://127.0.0.1:5000/References">References</a>
+        <a href="http://127.0.0.1:5000/DateTime">Date/Time</a>
+    </nav>
+    <head>
+        <title>{{title}}</title>
+        <meta charset="utf-8">
+        <meta name="description" content={{description}}>
+    </head>
+
+    <body>
+    <!-- css block to format all webpages -->
+        {% block css %}
+        <link href="{{url_for('static', filename='css/layout.css') }}" rel="stylesheet">
+        {% endblock %}
+            <!-- Flash to display messages -->
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class=flashes>
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+                 </ul>
+            {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+    </body>
+
+</html>

@@ -1,0 +1,19 @@
+<!-- Login page, allows user to login to website -->
+{% extends 'layout.html' %}
+
+{% block content %}
+    <body>
+        <div class="container">
+            <h1>Login Page</h1>
+            <br>
+            <form action="http://localhost:5000/Login" method="post">
+                <input type="text" placeholder="Username" name="username">
+                <input type="password" placeholder="Password" name="password">
+                <input class="btn btn-default" type="submit" value="Login">
+                </form>
+            {% if error %}
+                <p class="error"><strong>Error:</strong> {{ error }}
+            {% endif %}
+        </div>
+    </body>
+{% endblock %}

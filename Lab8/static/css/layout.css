@@ -1,0 +1,59 @@
+/* Style sheet, this css file styles all of the html files. */
+
+/* Header Style */
+header {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+/* The navbar container */
+nav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Navbar links */
+nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Links - change color on hover */
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/*Body style*/
+body{
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Center top header */
+h1{
+    text-align: center;
+}
+/* Style for containers */
+div{
+    background-color: #F1F1F1;
+    padding: 10px
+}
+
+/* Style for flash message */
+ul{
+    background-color: #F1F1F1;
+    padding: 10px
+}
+
+/* Table Style */
+table, th, td {
+  border: 1px solid;
+  text-align: center;
+  padding: 15px;
+}

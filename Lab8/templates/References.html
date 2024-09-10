@@ -1,0 +1,24 @@
+<!-- Reference page. Leads to external websites for more information. -->
+
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="container">
+        <h1>{{title}}</h1>
+        <p>{{description}}</p>
+        <h2>Links:</h2>
+        <nav>
+            <a href="https://www.globalsecurity.org/military/ops/airborne-jumps.htm">
+            UNITED STATES COMBAT JUMPS</a>
+        </nav>
+        <nav>
+            <a href="https://www.historynet.com/airborne-operations-during-world-war-ii/">
+            AIRBORNE OPERATIONS DURING WORLD WAR II</a>
+        </nav>
+        <nav>
+            <a href="https://armyhistory.org/operation-varsity-the-last-airborne-deployment-of-world-war-ii/">
+            OPERATION VARSITY: THE LAST AIRBORNE DEPLOYMENT OF WORLD WAR II</a>
+        </nav>
+    </div>
+
+{% endblock %}
