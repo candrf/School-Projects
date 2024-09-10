@@ -1,4 +1,4 @@
-This is a collection of school projects from BS in CS degree
+This is a collection of various school project from my CS degree. 
 
 CMSC430_Project2 - This is a compiler for a made up programming language written in C++. The compiler takes test files as input and performs syntax checks on the language, providing reports of any errors.
 
